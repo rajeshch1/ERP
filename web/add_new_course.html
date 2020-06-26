@@ -1,0 +1,92 @@
+ <style>
+ /* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	  text-align: center;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #ff6633;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #ff6633;
+}
+
+
+
+
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+	 text-align: center;
+}
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.credits {
+        display: block;
+        float: none;
+    }
+    span.Course_incharge {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+} 
+ </style>
+ 
+ 
+ <form method = "POST" action="Add_course" >
+  <h1 style="font-size: 35px">Add a course</h1>
+  <div class="container">
+       <label for="Course_id"><b>Course id:</b></label>
+    <input type="text"  name="course_id" required/>
+<br>
+      <label for="Course_name"><b>Course name:</b></label>
+    <input type="text"  name="course_name" required/>
+<br>
+    <label for="credits"><b>No. of credits:</b></label>
+    <input type="text"  name="credits" required/>
+<br>
+<label for="Course_incharge"><b>Course incharge:</b></label>
+    <input type="text"  name="course_incharge" required/>
+<br>    
+    
+    <button type="submit">Add Course</button>
+   
+  </div>
+
+
+</form> 
+ 

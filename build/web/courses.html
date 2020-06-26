@@ -1,0 +1,79 @@
+<html>
+<head>
+<style>
+#dtable {
+    font-family: Times New Roman;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+#dtable td, #dtable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+#dtable tr:hover {background-color: #ddd;}
+
+#dtable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ff6633;
+    color: white;
+}
+.button {
+    background-color: #ff6633; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+</style>
+
+</head>
+<body>
+<h1 style="font-size: 50px">Courses</h1>
+<br/>
+<br/>
+<table id="dtable">
+  <tr>
+    <th>course</th>
+    <th>staff</th>
+	<th>credits</th>
+  </tr>
+  <tr>
+    <td><label id="c1">Physics</label></td>
+    <td><label id="inc1">Newton</label></td>
+	<td><label id="cr1">3</label></td>
+  </tr>
+    <tr>
+    <td><label id="c2">Mathematics</label></td>
+    <td><label id="inc2">Ramanujan</label></td>
+	<td><label id="cr2">3</label></td>
+  </tr>
+  
+  <tr>
+    <td><label id="c3">Chemistry</label></td>
+    <td><label id="inc3">Robert boyle</label></td>
+	<td><label id="cr3">4</label></td>
+  </tr>
+  
+   <tr>
+    <td><label id="c2">Physics - ||</label></td>
+    <td><label id="inc2">Rutherford</label></td>
+	<td><label id="cr2">4</label></td>
+  </tr>
+  
+</table>
+<br/>
+<br/>
+<a href="add_new_course.html" class="button">Add new course </a>
+&nbsp;
+<a class="button">Change Course status </a>
+
+</body>
+</html>

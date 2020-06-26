@@ -1,0 +1,162 @@
+<style>
+* {box-sizing: border-box}
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+/* Full-width input fields */
+input[type=tel], input[type=email], input[type=text], input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.box{ 
+border: 3px solid #f1f1f1;
+	background: white;
+	width:800px;
+  height:1800px;
+
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #ff6633;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity:1;
+}
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ff6633;
+}
+
+li {
+    float: centre;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+	font-size: 25px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #ff6633;
+}
+.active {
+    background-color: #ff6633;
+}
+body {
+   background-image: url("institute.jpg");
+    background-repeat: repeat;
+	 background-size: cover;
+   }
+</style>
+ 
+  <ul>
+  <li><a href="dashboard.html" class="active">ERP for institutes</a></li>
+
+</ul>
+ <div class="box">
+ <form name = "registrationForm" method="get" onsubmit="return validateForm()" action="RegistrationServlet">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+   <b>Name</b><br>
+    <input type="text" placeholder="Enter Name" name="name" required>
+	<hr>
+	<b>Email ID</b><br>
+    <input type="email" placeholder="Email ID" name="email id" required>
+	<hr>
+	<b>Password</b><br>
+    <input type="password" placeholder="password" name="password" required>
+	<hr>
+	 <b>Date of Birth (yyyy-mm-dd)</b><br>
+	 <input type="tel" name="date of birth" placeholder="YYYY-MM-DD" required 
+pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))" 
+title="Enter a date in this format YYYY-MM-DD"/> 
+    
+    <hr>
+	
+	 <b>Gender</b><br>
+   <input type="radio" id="gender" name="gender" value="male" />male
+   <input type="radio" id="gender" name="gender" value="female" />female
+    <hr>
+	
+	 <b>Designation</b><br>
+   <input type="radio" id="designation" name="designation" value="student" />student
+   <input type="radio" id="designation" name="designation" value="faculty" />faculty
+    <hr>
+
+	<label for="Department"><b>Department</b></label><br>
+    <input type="text" placeholder="Department" name="Department" required>
+    <hr>
+
+	 <b>Address</b><br>
+    <input type="text" placeholder="Address" name="Address" required>
+    <hr>
+	
+	 <b>Mobile number</b><br>
+    <input type="tel" id="phone" placeholder="mobile number" name="phone" pattern="[0-9]{10}" required>
+    <hr>
+	
+	 <b>City</b><br>
+    <input type="text" placeholder="City" name="city" required>
+    <hr>
+	
+	 <b>Pin code</b><br>
+    <input type="tel" id="phone" placeholder="pincode" name="phone" pattern="[0-9]{6}" required>
+    <hr>
+	
+	 <b>State</b><br>
+    <input type="text" placeholder="State" name="state" required>
+    <hr>
+	
+	 <b>Country</b><br>
+    <input type="text" placeholder="Country" name="Country" required>
+    <hr>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+  </div>
+  
+</form> 
+</div>
